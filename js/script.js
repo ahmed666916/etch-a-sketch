@@ -1,5 +1,14 @@
+const button = document.createElement('button');
+button.textContent = "Change Grid Size";
+document.body.insertBefore(button, document.body.firstChild);
+
+
+
 
 const container = document.querySelector('.container');
+
+
+
 
 
 
