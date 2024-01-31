@@ -1,10 +1,16 @@
 
 
+// Select the container element from the NodeList
+const container = document.getElementsByClassName('container')[0];
+
+const row_container = document.getElementsByClassName('row-container')[0];
+const column_container = document.getElementsByClassName('column-container')[0];
+
 // Create an array to store the div elements
 let squares = [];
 
 // Create and append div elements to the array
-for (let i = 0; i < 31; i++) {
+for (let i = 0; i < 1497; i++) {
     let square = document.createElement('div');
     square.textContent = "Box";
     square.classList.add('square');
@@ -14,24 +20,14 @@ for (let i = 0; i < 31; i++) {
 
 
 
-// Select the container element from the NodeList
-const container = document.getElementsByClassName('container')[0];
-
-const row_container = document.getElementsByClassName('row-container')[0];
-
-const column_container = document.getElementsByClassName('column-container')[0];
-
-
-
 // Append all div elements to the container
-rows.forEach(row => {
+squares.forEach(row => {
     row_container.appendChild(row);
+    column_container.appendChild(column);
 });
 
 
-columns.forEach(column => {
-    column_container.appendChild(column);
-})
+
 container.appendChild(row_container);
 container.appendChild(column_container);
 
