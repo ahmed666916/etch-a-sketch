@@ -44,6 +44,11 @@ function changeGridSize() {
     createGrid(gridSize);
 }
 
+
+button.addEventListener('click', changeGridSize);
+
+createGrid(gridSize);
+
 function func() {
     this.setAttribute("style", "background-color: blue");
     
