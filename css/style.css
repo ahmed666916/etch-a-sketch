@@ -16,3 +16,8 @@
    
 }
 
+.square {
+    width: 5px;
+    height: 5px;
+    padding: 3px;
+}

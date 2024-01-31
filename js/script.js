@@ -17,13 +17,23 @@ for (let i = 0; i < 1497; i++) {
     squares.push(square);
 }
 
+// function for creating a div square
+function createDiv() {
+    let square = document.createElement('div');
+    square.textContent = "Box";
+    square.classList.add('square');
+    return square;
+}
+
 
 
 
 // Append all div elements to the container
-squares.forEach(row => {
-    row_container.appendChild(row);
-    column_container.appendChild(column);
+
+
+squares.forEach(square => {
+    row_container.appendChild(square);
+    //column_container.appendChild(square);
 });
 
 
