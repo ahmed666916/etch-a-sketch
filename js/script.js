@@ -4,7 +4,7 @@
 let squares = [];
 
 // Create and append div elements to the array
-for (let i = 0; i < 16; i++) {
+for (let i = 0; i < 31; i++) {
     let square = document.createElement('div');
     square.textContent = "Box";
     square.classList.add('square');
@@ -12,13 +12,6 @@ for (let i = 0; i < 16; i++) {
 }
 
 
-
-for (let i = 0; i < 16; i++) {
-    let column = document.createElement('div');
-    column.textContent = "Column";
-    column.classList.add('column');
-    columns.push(column);
-}
 
 
 // Select the container element from the NodeList
