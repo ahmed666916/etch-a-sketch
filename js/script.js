@@ -12,16 +12,20 @@ const container = document.querySelector('.container');
 let gridSize = 16;
 
 
+function createGrid(size) {
+    // Clear existing grid
+    container.innerHTML = '';
 
-for (let i = 0; i < 257; i++) {
-    const div = document.createElement('div');
-    container.appendChild(div);
+    // Set new grid size
+    container.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
 
-    div.addEventListener('mouseover', func, false);
-    
+    for (let i = 0; i < size * size; i++) {
+        const div = document.createElement('div');
+        container.appendChild(div);
+
+        div.addEventListener('mouseover', func, false);
+    }
 }
-
-
 
 function func() {
     this.setAttribute("style", "background-color: blue");
