@@ -8,7 +8,8 @@ document.body.insertBefore(button, document.body.firstChild);
 const container = document.querySelector('.container');
 
 
-
+//Initial grid size 
+let gridSize = 16;
 
 
 
