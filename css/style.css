@@ -1,23 +1,20 @@
+*{
+    box-sizing: border-box;
+}
+
 .container {
     display: flex;
-    border: 1px solid red;
-    background-color: aquamarine;
+    flex-wrap: wrap;
     
 }
-
-.row-container{
-    display: flex;
-    flex-direction: column;
-
-}
-
-.column-container{
-    display: flex;
-   
-}
-
-.square {
-    width: 5px;
-    height: 5px;
-    padding: 3px;
-}
+.container>div {
+    border: 1px solid black;
+    height: 25px;
+    width: 25px;
+  }
+  
+  .container>div:nth-child(16n + 1) {
+    width: 100%;
+    border: 0;
+    height: 0;
+  }
