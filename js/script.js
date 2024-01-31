@@ -1,7 +1,7 @@
 
 
 // Create an array to store the div elements
-let rows = [];
+let squares = [];
 
 // Create and append div elements to the array
 for (let i = 0; i < 16; i++) {
@@ -11,7 +11,7 @@ for (let i = 0; i < 16; i++) {
     rows.push(row);
 }
 
-let columns = [];
+
 
 for (let i = 0; i < 16; i++) {
     let column = document.createElement('div');
