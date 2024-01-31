@@ -5,10 +5,10 @@ let squares = [];
 
 // Create and append div elements to the array
 for (let i = 0; i < 16; i++) {
-    let row = document.createElement('div');
-    row.textContent = "Row";
-    row.classList.add('row');
-    rows.push(row);
+    let square = document.createElement('div');
+    square.textContent = "Box";
+    square.classList.add('square');
+    squares.push(square);
 }
 
 
